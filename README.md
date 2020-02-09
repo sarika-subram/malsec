@@ -55,7 +55,7 @@ Features of Client VPN:
 
 * **Deep integration** — integrates with existing AWS services, including AWS Directory Service and Amazon VPC.
 
-### Authentication
+### Authentication:
 
 Implemented at the first point of entry into the AWS Cloud. It is used to **determine whether clients are allowed to connect to the Client VPN endpoint**. If authentication succeeds, clients connect to the Client VPN endpoint and establish a VPN session. If authentication fails, the connection is denied and the client is prevented from establishing a VPN session.
 

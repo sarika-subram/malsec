@@ -4,11 +4,9 @@
 
 
 ## Multi-account strategy
----
 Multiple accounts provides a clean, robust and secure mechanism to isolate the control of data plane access to contained resources, therefore **reducing the blast radius**. The account boundary is very effective against **human error** and **misconfigured IAM policies or security groups**.
 
 ## Connect your Amazon VPCs and on-premises networks to a single gateway
----
  With **AWS Transit Gateway**, you only have to **create and manage a single connection** from the central gateway in to each Amazon VPC, on-premises data center, or remote office across your network. Transit Gateway acts as **a hub that controls how traffic is routed** among all the connected networks which act like spokes. 
  Traffic between an Amazon VPC and AWS Transit Gateway remains on AWS's private network and it is **not exposed to the public internet**. This reduces threat vectors such as distributed denial of service (DDoS) attacks and common exploits, such as SQL injection, cross-site scripting, cross-site request forgery, or abuse of broken authentication code. Transit Gateway inter-region peering also **encrypts inter-region traffic with no single point of failure or bandwidth bottleneck**.
 
@@ -16,7 +14,6 @@ Multiple accounts provides a clean, robust and secure mechanism to isolate the c
  https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpn-attachments.html
 
 ## Global view of your cloud and on on-premises networks
----
  Benefits of **AWS Transit Gateway network manager**:
  * Centralized Network Monitoring
  * Global Network Visibility
@@ -34,8 +31,6 @@ Multiple accounts provides a clean, robust and secure mechanism to isolate the c
  
 
 ## Securely access your AWS resources and resources in your on-premises network
----
-
 With **AWS Client VPN**, you can access your resources from any location using an OpenVPN-based VPN client.
 
 Features of Client VPN:
@@ -79,7 +74,6 @@ Authorization Rules: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn
 Getting started: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html
 
 ## Internetwork Traffic Privacy in Amazon VPC
-
 Security at every layer:
 * **Security groups** - control inbound and outbound traffic at the instance level
 * **Network access control lists (ACLs)** - control inbound and outbound traffic at the subnet level

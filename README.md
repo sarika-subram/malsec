@@ -55,7 +55,7 @@ Features of Client VPN:
 
 * **Deep integration** — integrates with existing AWS services, including AWS Directory Service and Amazon VPC.
 
-#### Authentication
+### Authentication
 
 Implemented at the first point of entry into the AWS Cloud. It is used to **determine whether clients are allowed to connect to the Client VPN endpoint**. If authentication succeeds, clients connect to the Client VPN endpoint and establish a VPN session. If authentication fails, the connection is denied and the client is prevented from establishing a VPN session.
 
@@ -66,7 +66,7 @@ Client VPN supports multi-factor authentication (MFA) when it's enabled for AWS 
 2. **Mutual Authentication**
 Client VPN uses certificates to perform authentication between the client and the server. Certificates are a digital form of identification issued by a certificate authority (CA). The server uses client certificates to authenticate clients when they attempt to connect to the Client VPN endpoint. The server and client certificates must be uploaded to AWS Certificate Manager (ACM).
 
-#### Authorization:
+### Authorization:
 
 1. **Security Groups**
 Client VPN automatically integrates with security groups. When you associate a subnet with a Client VPN endpoint, we automatically apply the VPC's default security group. You can change the security group after you associate the first target network. You can **enable Client VPN users to access your applications in a VPC, by adding a rule to allow traffic from the security group that was applied to the association**. Conversely, you can **restrict access for Client VPN users, by not specifying the security group that was applied to the association**. The security group rules you require might also depend on the kind of VPN access you want to configure. 
